@@ -1,11 +1,12 @@
-import { Link } from "react-router-dom";
 import "./hounsingGallery.scss";
+import { HousingCard } from "./housingCard";
 
 export function HousingGallery() {
   return (
     <>
       <section className="housing-gallery_container">
-        <Link to="housing">
+        {<HousingCard />}
+        {/* <Link to="housing">
           <figure>
             <img
               src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg"
@@ -15,7 +16,7 @@ export function HousingGallery() {
               <span className="housingCardTitle">Appartement cosy</span>
             </figcaption>
           </figure>
-        </Link>
+        </Link> */}
         <figure>
           <img
             src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-1.jpg"
