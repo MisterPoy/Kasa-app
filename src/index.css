@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+:root {
+  font-family: "Monserrat", sans-serif;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #ffff;
+}
