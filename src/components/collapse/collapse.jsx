@@ -18,7 +18,9 @@ export const Collapse = ({title, content}) => {
         alt="arrow" 
         className= {`collapse-arrow ${isOpen ? "open" : ""}`}/>
       </div>
-      <div className= {`collapse-content ${isOpen ? "show" : ""}`}>{content}</div>
+      <span className= {`collapse-content ${isOpen ? "show" : ""}`}>
+        {content}
+      </span>
     </div>
   )
 }

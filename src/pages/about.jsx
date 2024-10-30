@@ -9,14 +9,12 @@ export function About() {
   console.log(aboutList);
   return (
     <>
-      <HeaderNav />
-      <Banner1 page="about"/>
+      <Banner1 page="about" />
       <div className="collapse-container">
         {aboutList.map((item, index) => (
           <Collapse key={index} title={item.title} content={item.content} />
         ))}
       </div>
-      <Footer />
-    </>      
+    </>
   );
 }

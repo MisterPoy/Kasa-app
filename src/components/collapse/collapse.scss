@@ -10,7 +10,7 @@
 .collapse-title {
   display: flex;
   justify-content: space-between;
-  background-color: #FF6060;
+  background-color: #ff6060;
   border-radius: 5px;
   padding: 0.3em 1.2em;
   cursor: pointer;
@@ -21,33 +21,26 @@
   .collapse-arrow {
     transition: rotate 500ms ease-in-out;
     &.open {
-       transform: rotate(180deg); 
+      transform: rotate(180deg);
     }
   }
 }
 
-
 .collapse-content {
-  height: 0;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+  max-height: 0;
   overflow: hidden;
-  transform: translateY(-100%);
-  
-  background-color: #FBFBFB;
+  background-color: #fbfbfb;
   border-radius: 5px;
   padding: 0;
   transition: all 500ms ease-in-out;
-    &.show {
-      display: flex;
-      height: 100%;
-      transform: translateY(0);  
+  &.show {
+    max-height: 500px;
+    padding: 20px;
     overflow: hidden;
-    padding: 20px;   
-  }
-  p {
-    font-family:"Montserrat", sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    text-align: left;    
   }
 }
-

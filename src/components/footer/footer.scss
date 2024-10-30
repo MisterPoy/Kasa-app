@@ -1,14 +1,15 @@
 .footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  padding: 3rem 2rem;
-  background-color: black;
-  /* width: 100vw; */
   margin-top: 50px;
-
+  background-color: black;
+  width: 100%;
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem 2rem;
+  }
   img {
     width: 122px;
   }
