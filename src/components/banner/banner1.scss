@@ -1,0 +1,44 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 223px;
+  width: 1240px;
+  position: relative;
+  border-radius: 25px;
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 5px 5px 9px -6px rgba(0, 0, 0, 0.78);
+  
+
+  
+  .banner-title {
+    position: absolute;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 68.45px;
+    text-align: left;
+    color: white;
+    z-index: 1000;
+  }
+  .voileNoire {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    background-clip: content-box;
+    overflow: hidden;
+    border-radius: 25px;
+    opacity: 0.6;
+  }
+}
+
+.home {
+  background-image: url('./assets/imageSource1.png');
+}
+
+.about {
+  background-image: url('./assets/imageSource2.png');
+}

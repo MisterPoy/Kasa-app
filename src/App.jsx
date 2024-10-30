@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.scss";
-import { HeaderNav } from "./components/headerNAv.jsx";
-import { Footer } from "./components/footer.jsx";
+import { HeaderNav } from "./components/headerNAv/headerNAv.jsx";
+import { Footer } from "./components/footer/footer.jsx";
 import { Home } from "./pages/home.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ErrorPage } from "./pages/errorPage.jsx";
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
     ),
     errorElement: (
       <>
-        <ErrorPage />,
+        <ErrorPage />
       </>
     ),
   },
@@ -28,7 +28,7 @@ const router = createBrowserRouter([
     path: "/about",
     element: (
       <>
-        <About />,
+        <About />
       </>
     ),
   },
@@ -36,7 +36,7 @@ const router = createBrowserRouter([
     path: "/housing/:id",
     element: (
       <>
-        <Housing />,
+        <Housing />
       </>
     ),
   },

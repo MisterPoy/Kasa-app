@@ -1,14 +1,16 @@
-import { HeaderNav } from "../components/headerNAv";
-import { Footer } from "../components/footer";
+import React from "react";
+import { HeaderNav } from "../components/headerNAv/headerNAv";
+import { Footer } from "../components/footer/footer";
 import { Link } from "react-router-dom";
+import "./errorPage.scss";
 
 export function ErrorPage() {
   return (
     <>
       <HeaderNav />
-      <span className="404">404</span>
-      <h1 className="title-error"></h1>
-      <Link to="/">Retourner sur la page 'acceuil</Link>
+      <span className="txt404">404</span>
+      <h2 className="title-error">Oups! La page que vous demandez n&apos;existe pas.</h2>
+      <Link to="/" className="returnHome">Retourner sur la page d&apos;acceuil</Link>
       <Footer />
     </>
   );
