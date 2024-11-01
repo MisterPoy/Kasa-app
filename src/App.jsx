@@ -49,6 +49,11 @@ const router = createBrowserRouter([
         <Housing />
       </Layout>
     ),
+    errorElement: (
+      <Layout>
+        <ErrorPage />
+      </Layout>
+    ),
   },
 ]);
 

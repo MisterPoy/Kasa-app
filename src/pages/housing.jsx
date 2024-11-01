@@ -4,7 +4,10 @@ import { Carousel } from "../components/carousel/carousel";
 import housingsArray from "../data/annonces.json";
 import { useParams } from "react-router-dom";
 import { TitleLocation } from "../components/title/titleLocation";
+import { Host } from "../components/host/host";
 import { Tag } from "../components/tag/tag";
+import { Rates } from "../components/rates/rates";
+import { Collapse } from "../components/collapse/collapse";
 
 export function Housing() {
   // on récupère l'id de l'annonce rattaché à la page dynamique
@@ -27,19 +30,30 @@ export function Housing() {
   console.log("apres la destructuration", { ...selectedHousing });
   console.log(selectedHousing.tags);
 
-  console.log(tags[id]);
+  console.log(equipments);
 
   return (
     <>
-      <Carousel pictures={pictures} />
-      <div className="housingTitleSection">
-        <TitleLocation title={title} location={location} />
-        <div className="tagsContainer">
-          <Tag tags={tags} />
+      <div className="housingSheet">
+        <Carousel pictures={pictures} />
+        <div className="titleAndHosContainer">
+          <div className="housingTitleSection">
+            <TitleLocation title={title} location={location} />
+            <div className="tagsContainer">
+              <Tag tags={tags} />
+            </div>
+          </div>
+          <div className="hostRateContainer">
+            <Host name={host.name} portrait={host.picture} />
+            <Rates rating={rating} />
+          </div>
+        </div>
+        <div className="housingDetailsContainer">
+          <Collapse title="Description" content={description} />
+
+          <Collapse title="Équipements" content={equipments} />
         </div>
       </div>
-      <div className="hostRateContainer"></div>
-      <div className="housingCollapseContainer"></div>
     </>
   );
 }

@@ -4,7 +4,8 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+
+  max-height: 1500px;
 }
 
 .collapse-title {
@@ -15,7 +16,12 @@
   padding: 0.3em 1.2em;
   cursor: pointer;
   overflow: hidden;
-  h3 {
+  p {
+    font-family: Montserrat, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34.22px;
+    text-align: left;
     color: white;
   }
   .collapse-arrow {
@@ -33,14 +39,17 @@
   font-weight: 400;
   text-align: left;
   max-height: 0;
+  height: 100%;
   overflow: hidden;
   background-color: #fbfbfb;
   border-radius: 5px;
   padding: 0;
-  transition: all 500ms ease-in-out;
+  transition: padding 500ms ease-in-out;
   &.show {
-    max-height: 500px;
+    max-height: 1500px;
     padding: 20px;
     overflow: hidden;
+    height: 100%;
+    transition: padding 500ms ease-in-out;
   }
 }

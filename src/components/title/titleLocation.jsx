@@ -3,8 +3,8 @@ import "./titleLocation.scss";
 
 export function TitleLocation({ title, location }) {
   return (
-    <div className="title-location">
-      <h3 className="housingTitle">{title}</h3>
+    <div className="titleLocation">
+      <h2 className="housingTitle">{title}</h2>
       <p>{location}</p>
     </div>
   );

@@ -1,5 +1,59 @@
-.housing-sheet {
-  height: 600px;
+.housingSheet {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  .titleAndHosContainer {
+    display: flex;
+    justify-content: space-between;
+    .housingTitleSection {
+      align-self: flex-start;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .hostRateContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .host {
+        display: flex;
+        gap: 10px;
+        align-self: flex-end;
+        p {
+          color: #ff6060;
+          text-align: right;
+        }
+        img {
+          width: 64px;
+          height: 64px;
+          border-radius: 50px;
+        }
+      }
+      .rates {
+        display: flex;
+        gap: 10px;
+      }
+    }
+  }
+  .housingDetailsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.67px;
+    text-align: left;
+
+    .collapse {
+      li {
+        list-style: none;
+      }
+    }
+  }
 }
 
 .housingImg {
