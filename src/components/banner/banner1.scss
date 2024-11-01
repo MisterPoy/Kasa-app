@@ -10,10 +10,8 @@
   background-size: cover;
   background-position: center;
   box-shadow: 5px 5px 9px -6px rgba(0, 0, 0, 0.78);
-  
 
-  
-  .banner-title {
+  h1.banner-title {
     position: absolute;
     font-family: Montserrat;
     font-size: 48px;
@@ -36,9 +34,9 @@
 }
 
 .home {
-  background-image: url('./assets/imageSource1.png');
+  background-image: url("./assets/imageSource1.png");
 }
 
 .about {
-  background-image: url('./assets/imageSource2.png');
+  background-image: url("./assets/imageSource2.png");
 }

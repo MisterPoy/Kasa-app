@@ -1,0 +1,37 @@
+.carousel {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 415px;
+  width: 100%;
+  border-radius: 25px;
+  .arrowLeft {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 20px;
+    cursor: pointer;
+  }
+  .arrowRight {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 20px;
+    cursor: pointer;
+  }
+  .img-count {
+    position: absolute;
+    bottom: 20px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.67px;
+    text-align: center;
+    color: white;
+  }
+}
