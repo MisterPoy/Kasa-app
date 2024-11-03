@@ -5,10 +5,8 @@ import { HousingGallery } from "../components/housingGallery/housingGallery.jsx"
 export function Home() {
   return (
     <>
-      <div className="home_container">
-        <Banner1 page="home"/>
-        <HousingGallery />
-      </div>
+      <Banner1 page="home" />
+      <HousingGallery />
     </>
   );
 }

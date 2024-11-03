@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   height: 223px;
-  width: 1240px;
+  width: 100%;
   position: relative;
   border-radius: 25px;
   background-color: transparent;
@@ -39,4 +39,27 @@
 
 .about {
   background-image: url("./assets/imageSource2.png");
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 111px;
+    padding: 10px;
+
+    h1.banner-title {
+      font-family: Montserrat;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 24px;
+      text-align: left;
+    }
+  }
+
+  .home {
+    background-image: url("./assets/imageSource1.png");
+  }
+
+  .about {
+    background-image: url("./assets/imageSource2.png");
+  }
 }

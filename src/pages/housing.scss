@@ -25,6 +25,7 @@
         p {
           color: #ff6060;
           text-align: right;
+          line-height: 32px;
         }
         img {
           width: 64px;
@@ -42,15 +43,23 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 70px;
-    font-family: "Montserrat";
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 25.67px;
-    text-align: left;
 
     .collapse {
-      li {
-        list-style: none;
+      display: block;
+      .collapse-title {
+        padding: 10px 20px 10px;
+        p {
+          font-family: Montserrat;
+          font-size: 18px;
+          font-weight: 700;
+          text-align: left;
+        }
+      }
+      .collapse-content {
+        width: 100%;
+        li {
+          list-style: none;
+        }
       }
     }
   }
@@ -60,4 +69,49 @@
   height: 500px;
   width: 500px;
   object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .housingSheet {
+    .titleAndHosContainer {
+      flex-direction: column;
+      .housingTitleSection {
+      }
+      .hostRateContainer {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        gap: 20px;
+        .host {
+          display: flex;
+          gap: 10px;
+          align-self: flex-end;
+          p {
+            color: #ff6060;
+            text-align: right;
+          }
+          img {
+            width: 64px;
+            height: 64px;
+            border-radius: 50px;
+          }
+        }
+        .rates {
+          display: flex;
+          gap: 10px;
+        }
+      }
+    }
+    .housingDetailsContainer {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 70px;
+
+      .collapse {
+        li {
+          list-style: none;
+        }
+      }
+    }
+  }
 }

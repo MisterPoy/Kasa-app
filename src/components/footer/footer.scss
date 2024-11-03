@@ -1,7 +1,7 @@
 .footer {
-  margin-top: 50px;
   background-color: black;
   width: 100%;
+  margin-top: 50px;
   .footer-content {
     display: flex;
     flex-direction: column;
@@ -20,5 +20,23 @@
     line-height: 34.22px;
     text-align: center;
     color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    margin-top: 25px;
+
+    img {
+      width: 122px;
+    }
+    span {
+      font-family: "Montserrat";
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 17.11px;
+      text-align: center;
+      color: white;
+    }
   }
 }
