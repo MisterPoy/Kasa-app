@@ -20,7 +20,6 @@
   line-height: 34.22px;
   text-align: right;
   color: black;
-  width: 310px;
 }
 
 .navLinkContainer a {
@@ -40,23 +39,40 @@
   .header {
     padding: 20px;
     .navLinkContainer {
-      display: flex;
       justify-content: flex-end;
-      align-items: center;
+      gap: 40px;
+    }
+    img {
+      height: 46px;
+    }
+  }
+}
 
-      gap: 26px;
+@media (max-width: 550px) {
+  .header {
+    padding: 20px;
+    .navLinkContainer {
+      justify-content: flex-end;
+      gap: 25px;
+     
+    }
+    img {
+      height: 46px;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .header {
+    padding: 20px;
+    .navLinkContainer {
+      justify-content: flex-end;
+      gap: 25px;
+      font-family: Montserrat;
+font-size: 12px;
+font-weight: 500;
+line-height: 17.11px;
+text-align: right;
 
-      font-family: "Montserrat";
-      font-size: 24px;
-      font-weight: 500;
-      line-height: 34.22px;
-      text-align: right;
-      color: black;
-      width: 100%;
-      .navLinkContainer a {
-        text-decoration: none;
-        color: black;
-      }
     }
     img {
       height: 46px;

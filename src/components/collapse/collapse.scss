@@ -49,3 +49,23 @@
     transition: all 500ms ease-in-out;
   }
 }
+
+@media (max-width: 768px) {
+ 
+    .collapse {
+      .collapse-title {
+        padding: 05px 10px 5px;
+        height: 30px;
+        p {
+          font-size: 13px;
+          line-height: 18.54px;
+        }
+      }
+      .collapse-content {
+        font-family: Montserrat;
+        font-size: 12px;
+        line-height: 17.11px;
+      }
+    }
+  
+}

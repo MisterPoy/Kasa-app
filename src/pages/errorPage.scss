@@ -1,3 +1,10 @@
+.error-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .txt404 {
   font-family: "Montserrat";
   font-size: 288px;
@@ -24,4 +31,29 @@
   text-decoration: none;
   text-decoration: underline;
   color: black;
+}
+@media (max-width: 768px) {
+  .txt404 {
+    font-size: 96px;
+    line-height: 136px;
+  }
+  .title-error {
+    font-family: "Montserrat";
+    font-size: 18px;
+    line-height: 25px;
+    text-align: left;
+  }
+  .returnHome {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19.96px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .error-page-container {    
+    gap: 70px;
+  }
 }
