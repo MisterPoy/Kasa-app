@@ -4,6 +4,9 @@
   display: flex;
   justify-content: space-between;
   padding: 45px 100px;
+  img {
+    cursor: pointer;
+  }
 }
 
 .navLinkContainer {

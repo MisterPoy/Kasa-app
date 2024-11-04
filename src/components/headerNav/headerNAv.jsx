@@ -8,7 +8,9 @@ export function HeaderNav() {
   return (
     <>
       <header className="header">
-        <img src="/src/assets/logoHeaderD.png" alt="Logo de Kasa" />
+        <Link to="/">
+          <img src="/src/assets/logoHeaderD.png" alt="Logo de Kasa" />
+        </Link>
         <div className="navLinkContainer">
           <Link to="/">Accueil</Link>
           <Link to="/about">A Propos</Link>

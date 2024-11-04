@@ -35,7 +35,7 @@ export function Housing() {
   return (
     <>
       <div className="housingSheet">
-        <Carousel pictures={pictures} />
+        <Carousel pictures={pictures} alt="any" />
         <div className="titleAndHosContainer">
           <div className="housingTitleSection">
             <TitleLocation title={title} location={location} />

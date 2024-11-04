@@ -23,7 +23,7 @@ export function Tag({ tags }) {
       {tags.map((tag, index) => (
         <p
           key={index}
-          ref={(el) => (tagRefs.current[index] = el)} // on stocke cuaque élèment <p> dans tagRefs
+          ref={(el) => (tagRefs.current[index] = el)} // on stocke chaque élèment <p> dans tagRefs
           style={maxWidth ? { width: `${maxWidth}px` } : {}}
         >
           {tag}
