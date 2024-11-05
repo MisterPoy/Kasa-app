@@ -20,22 +20,22 @@ const Layout = ({ children }) => {
   );
 };
 
-///////// CREATE ROUTE WITH LAYOUT AND AN ERROR ELEMENT FOR EACH
+///////// CREATE ROUTEs WITH LAYOUT ELEMENT FOR EACH
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/", // DEFINE THE ROUTE FOR THE HOME PAGE
     element: (
       <Layout>
         <Home />
       </Layout>
     ),
-    errorElement: (
+    errorElement: ( // IF A ERROR OCCURS, RENDER THE ERRORPAGE COMPONENT
       <Layout>
         <ErrorPage />
       </Layout>
     ),
   },
-  {
+  { // ROUTE FOR ABOUT PAGE
     path: "/about",
     element: (
       <Layout>
@@ -43,14 +43,17 @@ const router = createBrowserRouter([
       </Layout>
     ),
   },
-  {
+  { // ROUTE FOR THE DYNAMIC HOUSING PAGE
     path: "/housing/:id",
     element: (
       <Layout>
         <Housing />
       </Layout>
     ),
-    errorElement: (
+  },
+  {
+    path: "/error", // ROUTE FOR THE ERROR PAGE
+    element: (
       <Layout>
         <ErrorPage />
       </Layout>

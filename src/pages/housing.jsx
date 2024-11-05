@@ -2,7 +2,7 @@ import React from "react";
 import "./housing.scss";
 import { Carousel } from "../components/carousel/carousel";
 import housingsArray from "../data/annonces.json";
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import { TitleLocation } from "../components/title/titleLocation";
 import { Host } from "../components/host/host";
 import { Tag } from "../components/tag/tag";
@@ -14,6 +14,12 @@ export function Housing() {
   const { id } = useParams();
   // RETRIEVE HOUSING DATA FROM THE JSON FILE
   const selectedHousing = housingsArray.find((housing) => housing.id === id);
+
+  if (!selectedHousing) {
+    // REDIRECT TO THE ERROR PAGE IF THE HOUSING IS NOT FOUND
+    return <Navigate to="/error" replace />;
+  }
+
   // DESTRUCTURE THE SELECTEDHOUSING OBJECT TO EXTRACT ITS PROPERTIES AS CONSTANTS
   // PFOR EASIER USE AS PROPS IN COMPONENTS CALLS
   const {
