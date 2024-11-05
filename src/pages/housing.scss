@@ -18,21 +18,7 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
-      .host {
-        display: flex;
-        gap: 10px;
-        align-self: flex-end;
-        p {
-          color: #ff6060;
-          text-align: right;
-          line-height: 32px;
-        }
-        img {
-          width: 64px;
-          height: 64px;
-          border-radius: 50px;
-        }
-      }
+      
       .rates {
         display: flex;
         gap: 10px;
@@ -43,7 +29,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 70px;
-
     .collapse {
       display: block;
       .collapse-title {
@@ -94,34 +79,17 @@
           line-height: 14.26px;
         }
       }
-      .hostRateContainer {
-        display: flex;
+      .hostRateContainer {        
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
-        gap: 20px;
-        .host {
-          display: flex;
-          gap: 10px;
-          align-self: flex-end;
-          p {
-            color: #ff6060;
-            text-align: right;
-          }
-          img {
-            width: 64px;
-            height: 64px;
-            border-radius: 50px;
-          }
-        }
-        .rates {
-          display: flex;
+        gap: 20px;        
+        .rates {          
           gap: 10px;
         }
       }
     }
-    .housingDetailsContainer {
-      display: grid;
+    .housingDetailsContainer {      
       grid-template-columns: repeat(1, 1fr);
       gap: 20px;
       .collapse {
@@ -133,8 +101,7 @@
             line-height: 18.54px;
           }
         }
-        .collapse-content {
-          font-family: Montserrat;
+        .collapse-content {        
           font-size: 12px;
           line-height: 17.11px;
         }
@@ -143,34 +110,13 @@
   }
 }
 
-@media (max-width: 550px) {
-  .titleLocation {
-    .housingTitle {
-      font-size: 18px;
-      line-height: 25.67px;
-    }
-    p {
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 19.96px;
-    }
-  }
+@media (max-width: 550px) { 
   .housingSheet {
     justify-content: space-around;
     .titleAndHosContainer {
       gap: 30px;
       .hostRateContainer {
         gap: 0px;
-        .host {
-          img {
-            height: 32px;
-            width: 32px;
-          }
-          p {
-            font-size: 12px;
-            line-height: 17.11px;
-          }
-        }
         .rates img {
           height: 13px;
         }

@@ -1,0 +1,28 @@
+.host {
+  display: flex;
+  gap: 10px;
+  align-self: flex-end;
+  p {
+    color: #ff6060;
+    text-align: right;
+    line-height: 32px;
+  }
+  img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50px;
+  }
+}
+
+@media (max-width: 550px) {
+  .host {
+    img {
+      height: 32px;
+      width: 32px;
+    }
+    p {
+      font-size: 12px;
+      line-height: 17.11px;
+    }
+  }
+}

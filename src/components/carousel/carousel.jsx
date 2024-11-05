@@ -1,21 +1,22 @@
+import React from "react";
 import { useState } from "react";
 import "./carousel.scss";
 
 export function Carousel({ pictures, alt }) {
-  const [currentIndex, setCurrentIndex] = useState(0); // state pour suivre l'index
-  const [fade, setFade] = useState(false); // state pour gérer l'animation de fondu
+  const [currentIndex, setCurrentIndex] = useState(0); // STATE TO TRACK THE INDEX
+  const [fade, setFade] = useState(false); // STATE TO MANAGE THE FADE ANIMATION
 
-  // methode pour afficher l'image précédente
+  // METHOD TO DISPLAY THE PREVIOUS IMAGE
   function previousImg() {
-    setFade(true); // active le fondu de l'image actuelle
+    setFade(true); // ACTIVATES THE FADE EFFECT ON THE CURRENT IMAGE
     setTimeout(() => {
       setCurrentIndex((prevIndex) =>
         prevIndex === 0 ? pictures.length - 1 : prevIndex - 1
       );
       setFade(false);
-    }, 350); // durée de l'animation
+    }, 350); // ANIMATION DURATION
   }
-  // methode pour afficher l'image suivante
+  // METHOD TU DISPLAY THE NEXT IMAGE
   function nextImg() {
     setFade(true);
     setTimeout(() => {
@@ -23,24 +24,21 @@ export function Carousel({ pictures, alt }) {
         nextIndex === pictures.length - 1 ? 0 : nextIndex + 1
       );
       setFade(false);
-    }, 350); // durée de l'animation
+    }, 350);
   }
 
   return (
-    <div
-      className="carousel"
-      /* style={{ backgroundImage: `url(${pictures[currentIndex]})` }} */
-    >
+    <div className="carousel">
       <div
-        className={`carousel-img ${fade ? "fade" : ""}`}
+        className={`carousel-img ${fade ? "fade" : ""}`} // ADDS FADE CLASS IF FADE IS TRUE OR NOT
         style={{ backgroundImage: `url(${pictures[currentIndex]})` }}
         alt={alt}
       ></div>
-      {pictures.length > 1 && (
+      {pictures.length > 1 && ( // DO NOT DISPLAY THE COUNTER AND ARROWS IF THERE IS ONLY ONE IMAGE
         <>
           <div>
             <img
-              onClick={previousImg}
+              onClick={previousImg} // ATTACH THE FONCTION TO THE CLICK EVENT ON THE ARROWS
               src="/src/assets/arrowLeft.png"
               alt="Arrow left"
               className="arrow arrowLeft"

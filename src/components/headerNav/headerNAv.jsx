@@ -1,13 +1,13 @@
+import React from "react";
 import "./headerNav.scss";
 import { Link } from "react-router-dom";
-import { About } from "../../pages/about";
 
 export function HeaderNav() {
-  const logoHeader = "";
-
+  
   return (
     <>
       <header className="header">
+        {/* THE LOGO IS CLICKABLE AND REDIRECT TO THE HOMEPAGE */}
         <Link to="/">
           <img src="/src/assets/logoHeaderD.png" alt="Logo de Kasa" />
         </Link>

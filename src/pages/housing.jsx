@@ -10,12 +10,12 @@ import { Rates } from "../components/rates/rates";
 import { Collapse } from "../components/collapse/collapse";
 
 export function Housing() {
-  // on récupère l'id de l'annonce rattaché à la page dynamique
+  // RETRIEVE THE ID OF THE LISTING ASSOCIATED WITH THE DYNAMIC PAGE
   const { id } = useParams();
-  console.log(id);
-  // récupération des données du logement depuis le fichier JSON
+  // RETRIEVE HOUSING DATA FROM THE JSON FILE
   const selectedHousing = housingsArray.find((housing) => housing.id === id);
-  console.log("avant la destructuration", { ...selectedHousing });
+  // DESTRUCTURE THE SELECTEDHOUSING OBJECT TO EXTRACT ITS PROPERTIES AS CONSTANTS
+  // PFOR EASIER USE AS PROPS IN COMPONENTS CALLS
   const {
     title,
     location,
@@ -26,11 +26,6 @@ export function Housing() {
     description,
     equipments,
   } = selectedHousing;
-
-  console.log("apres la destructuration", { ...selectedHousing });
-  console.log(selectedHousing.tags);
-
-  console.log(equipments);
 
   return (
     <>

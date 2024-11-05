@@ -41,6 +41,8 @@
     .navLinkContainer {
       justify-content: flex-end;
       gap: 40px;
+      font-size: 18px;
+      text-transform: uppercase;
     }
     img {
       height: 46px;
@@ -54,7 +56,6 @@
     .navLinkContainer {
       justify-content: flex-end;
       gap: 25px;
-     
     }
     img {
       height: 46px;
@@ -68,11 +69,11 @@
       justify-content: flex-end;
       gap: 25px;
       font-family: Montserrat;
-font-size: 12px;
-font-weight: 500;
-line-height: 17.11px;
-text-align: right;
-
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 17.11px;
+      text-align: right;
+      text-transform: uppercase;
     }
     img {
       height: 46px;

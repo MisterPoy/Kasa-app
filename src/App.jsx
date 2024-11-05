@@ -8,7 +8,7 @@ import { ErrorPage } from "./pages/errorPage.jsx";
 import { About } from "./pages/about.jsx";
 import { Housing } from "./pages/housing.jsx";
 
-// LAYOUT COPONENT FOR HEADER, FOOTER AND MAIN CONTAINER
+///////// LAYOUT COMPONENT FOR HEADER, FOOTER AND MAIN CONTAINER
 
 const Layout = ({ children }) => {
   return (
@@ -20,6 +20,7 @@ const Layout = ({ children }) => {
   );
 };
 
+///////// CREATE ROUTE WITH LAYOUT AND AN ERROR ELEMENT FOR EACH
 const router = createBrowserRouter([
   {
     path: "/",
@@ -56,6 +57,7 @@ const router = createBrowserRouter([
     ),
   },
 ]);
+
 
 function App() {
   return <RouterProvider router={router} />;

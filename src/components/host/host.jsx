@@ -2,10 +2,10 @@ import React from "react";
 import "./host.scss";
 
 export function Host({ name, portrait }) {
-  // pour séparer le nom et prénom
-  const spaceIndex = name.lastIndexOf(` `); // on définit l'espace entre le nom et le prénom
-  const firstName = name.substring(0, spaceIndex); // on sélectionne tout les caractères jusqu'au spaceIndex
-  const lastName = name.substring(spaceIndex + 1); // on selectionne tout les caractères après le spaceIndex
+  // TO SEPARATE FIRST NAME AND LAST NAME
+  const spaceIndex = name.lastIndexOf(` `); // DEFINE THE SPACING BETWEEN THE FIRST NAME AND THE LAST NAME
+  const firstName = name.substring(0, spaceIndex); // SELECT ALL CHARACTERS UP TO THE SPACEINDEX
+  const lastName = name.substring(spaceIndex + 1); // SELECT ALL CHARACTERS AFTER THE SPACEINDEX
 
   return (
     <div className="host">

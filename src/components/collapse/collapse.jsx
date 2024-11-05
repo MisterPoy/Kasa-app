@@ -9,6 +9,7 @@ export const Collapse = ({ title, content }) => {
   };
 
   return (
+    // CREATE THE TITLE DIV, WICH GETS 'OPEN CLASS CLICKED
     <div className="collapse">
       <div className="collapse-title" onClick={toggleCollapse}>
         <p>{title}</p>
@@ -19,16 +20,16 @@ export const Collapse = ({ title, content }) => {
         />
       </div>
       <>
-        {/* on verifie si le content est un objet et pas une chaîne de caractères */}
+        {/* VERIFY IF THE CONTENT IS AN OBJECT */}
         {typeof content === "object" ? (
-          //si c'est un objet on map en créabt une liste non ordonnée
+          // IF IS AN OBJECT, MAP IT TO CREATE UNORDERED LIST
           <ul className={`collapse-content ${isOpen ? "show" : ""}`}>
             {Object.keys(content).map((key) => (
               <li key={key}>{content[key]}</li>
             ))}
           </ul>
         ) : (
-          //sinon affiche un paragraphe
+          // OTHERWISE, DISPLAY A PARAGRAPH WITH THE STRING CONTENT
           <p className={`collapse-content ${isOpen ? "show" : ""}`}>
             {content}
           </p>

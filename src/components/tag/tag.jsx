@@ -2,29 +2,29 @@ import React, { useEffect, useRef, useState } from "react";
 import "./tag.scss";
 
 export function Tag({ tags }) {
-  const tagRefs = useRef([]); // stocker des références aux éléments <p>
-  console.log(tagRefs);
-  const [maxWidth, setMaxWidth] = useState(0); // hook pour stocker la largeur calculé
+  // STORE REFERENCE TO THE <P> ELEMENT CREATED BY MAP
+  // TO ACCESS THEM WITHOUT TRIGGERING A RE-RENDER
+  const tagRefs = useRef([]); 
+  // USESTATE TO STORE THE CALCULATED MAXUMUM LENGTH AMONG THE <P> ELEMENT
+  const [maxWidth, setMaxWidth] = useState(0); 
 
   useEffect(() => {
-    // offsetWidth récupère la largeur en pixels de tout les tag
+    // GET THE WIDTH OF THE TAGS STORED IN TAGREFS USING OFFSETWIDTH 
     const widths = tagRefs.current.map((tag) => (tag ? tag.offsetWidth : 0));
-    // methode qui retourne la largeur du plus grand élément
+    // CALCULATE THE LARGEST ONE
     const calculatedMaxWidth = Math.max(...widths);
-    // on affecte la valeur sur le state
-    setMaxWidth(calculatedMaxWidth);
-    console.log(maxWidth);
-  }, [tags]); // on affecte les tags en dépendance pour recalculer si les tags changent
-
-  console.log(`${maxWidth}px`);
+    // UPDATE THE STATE WITH THE MAXIMUM WIDTH
+    setMaxWidth(calculatedMaxWidth);    
+  }, []); // LEAVE THE DEPENDENCY ARRAY EMPTY SO ITS ONLY RUNS ON MOUNT
 
   return (
     <>
       {tags.map((tag, index) => (
         <p
           key={index}
-          ref={(el) => (tagRefs.current[index] = el)} // on stocke chaque élèment <p> dans tagRefs
+          ref={(el) => (tagRefs.current[index] = el)} // STORE EACH <P> ELEMENT IN TAGREFS TO MESURE THEIR DIMENSIONS LATER
           style={maxWidth ? { width: `${maxWidth}px` } : {}}
+          // APPLY THE CALCULATED WIDTH IF DEFINED, OTHERWISE KEEP THE DEFAULT WIDTH
         >
           {tag}
         </p>
