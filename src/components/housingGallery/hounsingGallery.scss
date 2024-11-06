@@ -53,16 +53,20 @@
 
 @media (max-width: 1240px) {
   .housing-gallery_container {
-    grid-template-columns: repeat(2, 1fr);    
     gap: 40px;
     figure {
       height: 290px;
-    }   
+    }
     .housing-card_title {
       height: 5.5rem;
       width: 100%;
-      padding: 20px;      
+      padding: 20px;
     }
+  }
+}
+@media (max-width: 1024px) {
+  .housing-gallery_container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -71,15 +75,24 @@
     grid-template-columns: repeat(1, 1fr);
     background-color: #ffffff;
     padding: 0px;
+    padding-top: 10px;
     border-radius: 0px;
     gap: 20px;
     figure {
       width: 100%;
-    }   
+    }
     .housing-card_title {
       height: 5.5rem;
       width: 100%;
-      padding: 20px;      
+      padding: 20px;
+    }
+  }
+}
+@media (max-width: 550px) {
+  .housing-gallery_container {
+    padding-top: 0;
+    figure {
+      height: 255px;
     }
   }
 }

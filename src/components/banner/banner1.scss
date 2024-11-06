@@ -45,13 +45,16 @@
   .banner {
     height: 111px;
     padding: 10px;
-
+    border-radius: 10px;
     h1.banner-title {
       font-family: Montserrat;
       font-size: 24px;
       font-weight: 700;
       line-height: 24px;
       text-align: left;
+    }
+    .voileNoire {
+      border-radius: 10px;
     }
   }
 

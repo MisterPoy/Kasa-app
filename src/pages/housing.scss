@@ -18,7 +18,7 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
-      
+
       .rates {
         display: flex;
         gap: 10px;
@@ -79,17 +79,17 @@
           line-height: 14.26px;
         }
       }
-      .hostRateContainer {        
+      .hostRateContainer {
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
-        gap: 20px;        
-        .rates {          
+        gap: 20px;
+        .rates {
           gap: 10px;
         }
       }
     }
-    .housingDetailsContainer {      
+    .housingDetailsContainer {
       grid-template-columns: repeat(1, 1fr);
       gap: 20px;
       .collapse {
@@ -101,7 +101,7 @@
             line-height: 18.54px;
           }
         }
-        .collapse-content {        
+        .collapse-content {
           font-size: 12px;
           line-height: 17.11px;
         }
@@ -110,9 +110,10 @@
   }
 }
 
-@media (max-width: 550px) { 
+@media (max-width: 550px) {
   .housingSheet {
     justify-content: space-around;
+    margin-top: 0;
     .titleAndHosContainer {
       gap: 30px;
       .hostRateContainer {
