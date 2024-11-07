@@ -3,7 +3,7 @@ import "./housing.scss";
 import { Carousel } from "../components/carousel/carousel";
 import housingsArray from "../data/annonces.json";
 import { Navigate, useParams } from "react-router-dom";
-import { TitleLocation } from "../components/title/titleLocation";
+import { TitleLocation } from "../components/titleLocation/titleLocation";
 import { Host } from "../components/host/host";
 import { Tag } from "../components/tag/tag";
 import { Rates } from "../components/rates/rates";

@@ -21,6 +21,7 @@
     opacity: 1;
     &.fade {
       opacity: 0;
+      transition: opacity 250ms ease-in-out;
     }
   }
   .arrow {
