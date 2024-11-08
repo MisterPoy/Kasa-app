@@ -14,7 +14,7 @@ export const Collapse = ({ title, content }) => {
       <div className="collapse-title" onClick={toggleCollapse}>
         <p>{title}</p>
         <img
-          src="/src/assets/arrowDown.png"
+          src="/assets/images/arrowDown.png"
           alt="arrow"
           className={`collapse-arrow ${isOpen ? "open" : ""}`}
         />

@@ -39,7 +39,7 @@ export function Carousel({ pictures, alt }) {
           <div>
             <img
               onClick={previousImg} // ATTACH THE FONCTION TO THE CLICK EVENT ON THE ARROWS
-              src="/src/assets/arrowLeft.png"
+              src="/assets/images/arrowLeft.png"
               alt="Arrow left"
               className="arrow arrowLeft"
             />
@@ -47,7 +47,7 @@ export function Carousel({ pictures, alt }) {
           <div>
             <img
               onClick={nextImg}
-              src="/src/assets/arrowRight.png"
+              src="/assets/images/arrowRight.png"
               alt="Arrow right"
               className="arrow arrowRight"
             />

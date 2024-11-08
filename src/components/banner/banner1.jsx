@@ -8,8 +8,8 @@ export function Banner1({page}) {
       className="banner"
       style={{ // SETS THE BACKGROUND IMAGE BASED ON THE CURRENT PAGE
         backgroundImage: isHomePage
-          ? "url('../src/assets/imageSource1.png')"
-          : "url('../src/assets/imageSource2.png')"
+          ? "url('/assets/images/imageSource1.png')"
+          : "url('/assets/images/imageSource2.png')"
       }}
       // DISPLAY THE TEXT ONLY ON THE HOME PAGE
       > 

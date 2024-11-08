@@ -34,11 +34,11 @@
 }
 
 .home {
-  background-image: url("./assets/imageSource1.png");
+  background-image: url("/assets/images/imageSource1.png");
 }
 
 .about {
-  background-image: url("./assets/imageSource2.png");
+  background-image: url("/assets/images/imageSource2.png");
 }
 
 @media (max-width: 768px) {
@@ -59,10 +59,10 @@
   }
 
   .home {
-    background-image: url("./assets/imageSource1.png");
+    background-image: url("/assets/images/imageSource1.png");
   }
 
   .about {
-    background-image: url("./assets/imageSource2.png");
+    background-image: url("/assets/images/imageSource2.png");
   }
 }
