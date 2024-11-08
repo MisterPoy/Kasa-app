@@ -1,6 +1,6 @@
 import React, { Children } from "react";
 import "./app.scss";
-import { HeaderNav } from "./components/headerNav/headerNavtemp.jsx";
+import { HeaderNav } from "./components/headerNav/headerNav.jsx";
 import { Footer } from "./components/footer/footer.jsx";
 import { Home } from "./pages/home.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
