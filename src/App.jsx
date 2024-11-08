@@ -1,5 +1,5 @@
 import React, { Children } from "react";
-import "./App.scss";
+import "./app.scss";
 import { HeaderNav } from "./components/headerNAv/headerNAv.jsx";
 import { Footer } from "./components/footer/footer.jsx";
 import { Home } from "./pages/home.jsx";
