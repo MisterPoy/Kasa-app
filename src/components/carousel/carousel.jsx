@@ -32,7 +32,7 @@ export function Carousel({ pictures, alt }) {
       <div
         className={`carousel-img ${fade ? "fade" : ""}`} // ADDS FADE CLASS IF FADE IS TRUE OR NOT
         style={{ backgroundImage: `url(${pictures[currentIndex]})` }}
-        alt={alt}
+        
       ></div>
       {pictures.length > 1 && ( // DO NOT DISPLAY THE COUNTER AND ARROWS IF THERE IS ONLY ONE IMAGE
         <>
